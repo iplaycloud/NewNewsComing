@@ -16,6 +16,8 @@
 #import "UMSocialWechatHandler.h"
 #import "UMSocial.h"
 
+#import "EaseStartView.h"
+
 //友盟
 //#define kAppKey  @"5632e65ae0f55a556a0013d9"
 //#define kURL     @"http://www.umeng.com/social"
@@ -46,6 +48,12 @@
     [self setupViewControllers];
     
     self.window.rootViewController = self.tabBarController;
+    
+    //启动刚开始的动画
+//    EaseStartView *startView = [EaseStartView startView];
+//    [startView startAnimationWithCompletionBlock:^(EaseStartView *startView) {
+//        //TODO
+//    }];
     
     return YES;
 }

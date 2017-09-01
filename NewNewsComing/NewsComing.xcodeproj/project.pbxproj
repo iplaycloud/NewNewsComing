@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D7495291F5950EA00925D9F /* EaseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7495281F5950EA00925D9F /* EaseStartView.m */; };
+		8D74956A1F59537700925D9F /* logo_coding_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74954A1F59537700925D9F /* logo_coding_top@2x.png */; };
+		8D74956B1F59537700925D9F /* start_bg_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74954B1F59537700925D9F /* start_bg_02.png */; };
 		C5ACE59C1F4AA9E60069978B /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = C5ACE59B1F4AA9E60069978B /* placeholder */; };
 		C5ACE59E1F4AA9F30069978B /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = C5ACE59D1F4AA9F30069978B /* placeholder */; };
 		C5ACE5A01F4AADEB0069978B /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = C5ACE59F1F4AADEB0069978B /* placeholder */; };
@@ -93,6 +96,10 @@
 /* Begin PBXFileReference section */
 		3363DA4589CA6BE12754E7FA /* libPods-NewsComing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsComing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6945B975C75C79AE94557329 /* Pods-NewsComing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsComing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsComing/Pods-NewsComing.debug.xcconfig"; sourceTree = "<group>"; };
+		8D7495271F5950EA00925D9F /* EaseStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseStartView.h; sourceTree = "<group>"; };
+		8D7495281F5950EA00925D9F /* EaseStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseStartView.m; sourceTree = "<group>"; };
+		8D74954A1F59537700925D9F /* logo_coding_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_coding_top@2x.png"; sourceTree = "<group>"; };
+		8D74954B1F59537700925D9F /* start_bg_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_bg_02.png; sourceTree = "<group>"; };
 		C5ACE59B1F4AA9E60069978B /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		C5ACE59D1F4AA9F30069978B /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		C5ACE59F1F4AADEB0069978B /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
@@ -284,6 +291,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8D74952A1F59537700925D9F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8D74954A1F59537700925D9F /* logo_coding_top@2x.png */,
+				8D74954B1F59537700925D9F /* start_bg_02.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		C5E5029B1E63CC7A003F1943 = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +343,7 @@
 		C5E503AD1E64190E003F1943 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8D74952A1F59537700925D9F /* images */,
 				C5E503AE1E64190E003F1943 /* Define */,
 				C5E503CD1E64190E003F1943 /* NetManager */,
 				C5E503BF1E64190E003F1943 /* Model */,
@@ -642,6 +659,8 @@
 		C5E504201E64190E003F1943 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D7495271F5950EA00925D9F /* EaseStartView.h */,
+				8D7495281F5950EA00925D9F /* EaseStartView.m */,
 				C5E504211E64190E003F1943 /* HomeCell.h */,
 				C5E504221E64190E003F1943 /* HomeCell.m */,
 				C5E504231E64190E003F1943 /* HomeView */,
@@ -850,11 +869,13 @@
 				C5E502B71E63CC7A003F1943 /* LaunchScreen.storyboard in Resources */,
 				C5E5046E1E64190E003F1943 /* UMSCommentInputController.xib in Resources */,
 				C5E504741E64190E003F1943 /* UMSShareListController.xib in Resources */,
+				8D74956A1F59537700925D9F /* logo_coding_top@2x.png in Resources */,
 				C5E504811E64190F003F1943 /* ios-social-sdk-login-quick.html in Resources */,
 				C5E504861E64190F003F1943 /* markdown.css in Resources */,
 				C5E504711E64190E003F1943 /* UMShareEditViewControlleriPad.xib in Resources */,
 				C5E5046D1E64190E003F1943 /* UMSCommentDetailController.xib in Resources */,
 				C5E504701E64190E003F1943 /* UMShareEditViewController.xib in Resources */,
+				8D74956B1F59537700925D9F /* start_bg_02.png in Resources */,
 				C5E5047E1E64190F003F1943 /* ios-social-sdk-comment-quick.html in Resources */,
 				C5E5046B1E64190E003F1943 /* UMSocialLocalizable.strings in Resources */,
 				C5E5047D1E64190F003F1943 /* ios-social-sdk-comment-detail.html in Resources */,
@@ -960,6 +981,7 @@
 				C5E504941E64190F003F1943 /* PicController.m in Sources */,
 				C5E504891E64190F003F1943 /* VideoCell.m in Sources */,
 				C5E504921E64190F003F1943 /* SetController.m in Sources */,
+				8D7495291F5950EA00925D9F /* EaseStartView.m in Sources */,
 				C5E504641E64190E003F1943 /* PicNetManager.m in Sources */,
 				C5E5049A1E64190F003F1943 /* VideoViewModel.m in Sources */,
 				C5E504881E64190F003F1943 /* HomeCell.m in Sources */,

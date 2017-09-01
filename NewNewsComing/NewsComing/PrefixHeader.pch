@@ -89,4 +89,10 @@ static const int ddLogLevel = DDLogLevelError;
 //方便形成如同网易新闻首页，控制器滑动翻页效果的控制器
 #import <WMPageController.h>
 
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
 #endif /* PrefixHeader_pch */
