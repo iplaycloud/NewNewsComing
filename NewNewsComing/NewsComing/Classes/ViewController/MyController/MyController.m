@@ -11,6 +11,7 @@
 #import "RegisterLoginController.h"
 
 @interface MyController () <UITableViewDataSource, UITableViewDelegate>
+
 @property (strong, nonatomic) UIView *headView;
 @property (strong, nonatomic) UITableView *tableView;
 
@@ -69,12 +70,14 @@
 #pragma mark - 懒加载
 - (UIView *)headView {
     if(_headView == nil) {
+        
         _headView = [[UIView alloc] init];
+        
         UIImageView *imgView = [UIImageView new];
         imgView.image = [UIImage imageNamed:@"tableViewBackgroundImage"];
         [_headView addSubview:imgView];
         [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(0);
+            make.edges.mas_equalTo(0);      
         }];
         
         UIButton *setBtn = [UIButton buttonWithType:UIButtonTypeCustom];
