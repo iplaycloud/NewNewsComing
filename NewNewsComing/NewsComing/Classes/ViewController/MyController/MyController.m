@@ -27,8 +27,10 @@
 }
 
 + (UINavigationController *)defaultMyNavi {
-        MyController *vc = [MyController new];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    MyController *vc = [MyController new];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     return navi;
 }
 

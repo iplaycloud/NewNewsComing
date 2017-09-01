@@ -42,6 +42,7 @@
     
     [Bmob registerWithAppKey:@"160f7c6245ab95cfef879bf663e2fd32"];
     
+    //设置tabBarController
     [self setupViewControllers];
     
     self.window.rootViewController = self.tabBarController;
@@ -64,16 +65,19 @@
 
 - (void)setupViewControllers {
     
+    //创建四个导航控制器
     UINavigationController *navi0 = [HomeController defaultHomeNavi];
     UINavigationController *navi1 = [WordController defaultWordNavi];
     UINavigationController *navi2 = [VideoController defaultVideoNavi];
-    UINavigationController *vc3 = [MyController defaultMyNavi];
+    UINavigationController *navi3 = [MyController defaultMyNavi];
     
     CYLTabBarController *tbc = [CYLTabBarController new];
     
+    //设置tabbar item个数
     [self customTabBarForController:tbc];
     
-    [tbc setViewControllers:@[navi0,navi1,navi2,vc3]];
+    //绑定tabbar item 和 ViewController
+    [tbc setViewControllers:@[navi0,navi1,navi2,navi3]];
     
     self.tabBarController = tbc;
 }
@@ -115,17 +119,5 @@
     }
     return _tabBarController;
 }
-
-//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-//{
-//    return  [UMSocialSnsService handleOpenURL:url];
-//}
-//- (BOOL)application:(UIApplication *)application
-//            openURL:(NSURL *)url
-//  sourceApplication:(NSString *)sourceApplication
-//         annotation:(id)annotation
-//{
-//    return  [UMSocialSnsService handleOpenURL:url];
-//}
 
 @end

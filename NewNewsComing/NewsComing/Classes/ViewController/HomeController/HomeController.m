@@ -16,13 +16,16 @@
 @implementation HomeController
 
 + (UINavigationController *)defaultHomeNavi {
+    
     static UINavigationController *navi = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        
         HomeController *vc = [[HomeController alloc] initWithViewControllerClasses:[self viewControllerClasses] andTheirTitles:[self itemNames]];
         vc.keys = [self vcKeys];
         vc.values = [self vcValues];
         navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     });
     return navi;
 }
@@ -31,6 +34,7 @@
     return @[@"最新",@"新闻",@"评测",@"导购",@"用车",@"技术",@"文化",@"改装",@"游记",];
 }
 
+//创建多个HomeListController
 + (NSArray *)viewControllerClasses {
     NSMutableArray *mArr = [NSMutableArray new];
     for (int i = 0; i < [self itemNames].count; i++) {
